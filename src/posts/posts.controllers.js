@@ -29,8 +29,8 @@ const updatePost = async(id, postObj) => {
             id: id
         }
     })
-    console.log(data)
-    return data[0]
+    return data
+    //data[0] if id does not exist
 }
 
 const deletePost = async(id) => {
