@@ -13,7 +13,8 @@ const Posts = db.define('posts', {
     },
     userName: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
+        unique: true
     },
     isPublished: {
         type: DataTypes.BOOLEAN,
